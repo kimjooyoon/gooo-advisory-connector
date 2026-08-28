@@ -1,0 +1,11 @@
+{
+  "schema":"gooo/advisory-connector/release-locks/v1",
+  "core":{"repository":"kimjooyoon/meta-ontology-go","tag":"v0.2.0-dev","tag_object_sha":"733f7b22a365606d42bf238f5c535ff12e5abf8c","target_commit_sha":"050b11e56d9f972e0d507d406e5da8a60595052b","asset":{"name":"gooo-linux-amd64.tar.gz","sha256":"99599bdd3c2ae947718881dd78b899234452ab06bd8e60a550320054e1d81ddd"},"resolution_schema":"gooo/activity-cardinality-resolution/v1"},
+  "promotion":{"repository":"kimjooyoon/gooo-link","tag":"v0.5.0-dev","tag_object_sha":"b92af0b55af28500b7249a5af06fef017df563df","target_commit_sha":"ee94d2fbc2906543a24e95f979b598be4dccc916","asset":{"name":"adoption-observation.json","sha256":"88dba9b5582591fab897e7e6a1bbe8311a772a42b5953b5a310e2d5814d72e39"}},
+  "consumers":[
+    {"ordinal":1,"id":"local-ledger","repository":"kimjooyoon/gooo-local-ledger","tag":"v0.4.0-dev","tag_object_sha":"10c375038c3d5fede088e618657b129ab4a7ac3d","target_commit_sha":"c90d3b53b9b6f9722b690daf14f416226122accf","archive":{"name":"gooo-local-ledger-interchange-v0.4.0-dev.zip","sha256":"306f14afc25da2d4416985c599278f85167c0a79bdf6258ef0db69e3e5130f56"}},
+    {"ordinal":2,"id":"design-evidence","repository":"kimjooyoon/gooo-design-evidence","tag":"v0.4.0-dev","tag_object_sha":"78bea099f784b83de7860074dc27758ab98ff7fa","target_commit_sha":"26426e1fa82db516cce332f679ec9a79f9f2a1e3","archive":{"name":"gooo-design-evidence-interchange-v0.4.0-dev.zip","sha256":"6e3cf1dd7ffee1ddefca9d2b773d7f2971a8be858a81022b171bd9f406885bc5"}},
+    {"ordinal":3,"id":"infra-evidence","repository":"kimjooyoon/gooo-infra-evidence","tag":"v0.4.0-dev","tag_object_sha":"2c1a35f45877f67acff151050cbf292d6f535979","target_commit_sha":"8869e00b00f74428b22e430653fb837ce3f29abb","archive":{"name":"gooo-infra-evidence-interchange-v0.4.0-dev.zip","sha256":"3a1585b596d667e5faa5d4d1da267b56c1f695fa9e4ae1d76aa6b5a92c99dff1"}}
+  ],
+  "connector_contract":{"input_domains":3,"output_files":5,"expected_nodes":4,"expected_edges":3,"shared_specification_anchors":1,"external_required_gates":0,"root_readme_readiness":"EXCLUDED"}
+}

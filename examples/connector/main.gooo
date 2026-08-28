@@ -1,0 +1,28 @@
+package advisoryconnector
+namespace advisoryconnector
+
+entity ReleasedGoooIdentity id "gooo://connector/entity/released-gooo-identity"
+entity PromotionReleaseIdentity id "gooo://connector/entity/promotion-release-identity"
+entity EligiblePromotion id "gooo://connector/entity/eligible-promotion"
+entity DomainReleaseSet id "gooo://connector/entity/domain-release-set"
+entity CanonicalInputBundleSet id "gooo://connector/entity/canonical-input-bundle-set"
+entity PortfolioNodeSet id "gooo://connector/entity/portfolio-node-set"
+entity PortfolioEdgeSet id "gooo://connector/entity/portfolio-edge-set"
+entity SharedSpecificationAnchor id "gooo://connector/entity/shared-specification-anchor"
+entity UnknownRelationSet id "gooo://connector/entity/unknown-relation-set"
+entity ReplayReceipt id "gooo://connector/entity/replay-receipt"
+entity ReadOnlyChecksumEffect id "gooo://connector/entity/read-only-checksum-effect"
+entity ConnectorDecision id "gooo://connector/entity/connector-decision"
+
+activity ObserveReleasedGoooIdentity(ReleasedGoooIdentity) -> ConnectorDecision
+activity ObservePromotionReleaseIdentity(PromotionReleaseIdentity) -> ConnectorDecision
+activity RequireEligiblePromotion(EligiblePromotion) -> ConnectorDecision
+activity ObserveDomainReleaseIdentities(DomainReleaseSet) -> ConnectorDecision
+activity ObserveCanonicalInputBundles(CanonicalInputBundleSet) -> ConnectorDecision
+activity GeneratePortfolioNodes(PortfolioNodeSet) -> ConnectorDecision
+activity GeneratePortfolioEdges(PortfolioEdgeSet) -> ConnectorDecision
+activity JoinSharedSpecificationAnchor(SharedSpecificationAnchor) -> ConnectorDecision
+activity PreserveUnknownRelations(UnknownRelationSet) -> ConnectorDecision
+activity ObserveDeterministicReplay(ReplayReceipt) -> ConnectorDecision
+activity PreserveReadOnlyChecksums(ReadOnlyChecksumEffect) -> ConnectorDecision
+activity CloseAdvisoryConnectorDecision(ConnectorDecision) -> ConnectorDecision
